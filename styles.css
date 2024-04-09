@@ -51,8 +51,6 @@ body {
     background-color: #e2e8f0;
     line-height: 1.5;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 a {
@@ -73,6 +71,8 @@ a {
     justify-items: center;
     align-items: center;
     padding: 1em 2em;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .header div {
@@ -108,6 +108,15 @@ a {
     gap: 18px;
 }
 
+.header .avatar i {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.header .avatar i:hover {
+    transform: scale(1.5);
+}
+
 .header .welcome {
     display: grid;
     grid-template: auto auto / 100px 2fr;
@@ -117,11 +126,11 @@ a {
     grid-row: 1 / 3;
 }
 
-.header p {
+.header .welcome p {
     align-self: end;
 }
 
-.header h2 {
+.header .welcome h2 {
     font-size: 30px;
     align-self: start;
 }
