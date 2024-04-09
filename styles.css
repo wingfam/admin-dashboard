@@ -48,15 +48,11 @@ table {
 }
 
 body {
+    background-color: #e2e8f0;
+    line-height: 1.5;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 18px;
-    background-color: #e2e8f0;
-}
-
-/* Make images easier to work with */
-i {
-  max-width: 100%;
-  display: block;
+    font-weight: bold;
 }
 
 a {
@@ -95,18 +91,40 @@ a {
     justify-self: start;
 }
 
-.header div:nth-child(1) {
-    width: 100%;
+.header .search {
+    width: 80%;
     gap: 18px;
 }
 
-.header .search-bar input {
+.header .search input {
     border: none;
     background-color: #e2e8f0;
     outline-color: #bfdbfe;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     width: min(100%, 50vw);
+}
+
+.header .avatar {
+    gap: 18px;
+}
+
+.header .welcome {
+    display: grid;
+    grid-template: auto auto / 100px 2fr;
+}
+
+.header .welcome img {
+    grid-row: 1 / 3;
+}
+
+.header p {
+    align-self: end;
+}
+
+.header h2 {
+    font-size: 30px;
+    align-self: start;
 }
 
 .nav {
