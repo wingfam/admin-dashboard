@@ -6,6 +6,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -13,9 +16,24 @@
         <div class="container">
 
             <div class="header">
-                <div class="search-bar"></div>
-                <div class="profile"></div>
-                <div class="avatar"></div>
+                <div class="search-bar">
+                    <label for="search">
+                        <i class="material-icons">home</i>
+                    </label>
+                    <input type="search" name="search" id="search" >
+                </div>
+                <div class="profile">
+                    <i class="material-icons">home</i>
+                    <img src="./images/icons8-person-48.png" alt="person avatar">
+                    <p>Nhat Minh</p>
+                </div>
+                <div class="avatar">
+                    <img src="./images/icons8-person-96.png" alt="large person avatar">
+                    <p>
+                        <span>Hi there, </span><br>
+                        Nhat Minh (@MinhNHN)
+                    </p>
+                </div>
                 <div class="buttons">
                     <button>New</button>
                     <button>Upload</button>
@@ -25,7 +43,7 @@
 
             <div class="nav">
                 <div class="logo">
-                    <i class="material-icons">placeholder</i>
+                    <i class="material-icons">home</i>
                     <a href="#">Dashboard</a>
                 </div>
                 <ul>
@@ -68,109 +86,111 @@
                 </ul>
             </div>
 
-            <div class="project-grid">
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="card-links">
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
+            <div class="content-wrapper">
+                <div class="project-grid">
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="card-links">
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="card-links">
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="card-links">
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="card-links">
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="card-links">
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="card-links">
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                            <a href="#"> <i class="material-icons">cloud</i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="card-links">
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
+    
+                <div class="announcement-list">
+                    <div class="announcement">
+                        <p class="title">Announcement Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <hr>
+                    </div>
+                    <div class="announcement">
+                        <p class="title">Announcement Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <hr>
+                    </div>
+                    <div class="announcement">
+                        <p class="title">Announcement Title</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <hr>
                     </div>
                 </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="card-links">
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
+    
+                <div class="trending-list">
+                    <div class="trend">
+                        <img src="" alt="">
+                        <p>
+                            <span><a href="#">@social</a></span><br>
+                            Project name
+                        </p>
                     </div>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="card-links">
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
+                    <div class="trend">
+                        <img src="" alt="">
+                        <p>
+                            <span><a href="#">@social</a></span><br>
+                            Project name
+                        </p>
                     </div>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="card-links">
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
+                    <div class="trend">
+                        <img src="" alt="">
+                        <p>
+                            <span><a href="#">@social</a></span><br>
+                            Project name
+                        </p>
                     </div>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="card-links">
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
-                        <a href="#"> <i class="material-icons">cloud</i></a>
+                    <div class="trend">
+                        <img src="" alt="">
+                        <p>
+                            <span><a href="#">@social</a></span><br>
+                            Project name
+                        </p>
                     </div>
-                </div>
-            </div>
-
-            <div class="announcement-list">
-                <div class="announcement">
-                    <p class="title">Announcement Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <hr>
-                </div>
-                <div class="announcement">
-                    <p class="title">Announcement Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <hr>
-                </div>
-                <div class="announcement">
-                    <p class="title">Announcement Title</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <hr>
-                </div>
-            </div>
-
-            <div class="trending-list">
-                <div class="trend">
-                    <img src="" alt="">
-                    <p>
-                        <span><a href="#">@social</a></span><br>
-                        Project name
-                    </p>
-                </div>
-                <div class="trend">
-                    <img src="" alt="">
-                    <p>
-                        <span><a href="#">@social</a></span><br>
-                        Project name
-                    </p>
-                </div>
-                <div class="trend">
-                    <img src="" alt="">
-                    <p>
-                        <span><a href="#">@social</a></span><br>
-                        Project name
-                    </p>
-                </div>
-                <div class="trend">
-                    <img src="" alt="">
-                    <p>
-                        <span><a href="#">@social</a></span><br>
-                        Project name
-                    </p>
                 </div>
             </div>
         </div>
