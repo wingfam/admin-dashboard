@@ -54,10 +54,7 @@ body {
 }
 
 /* Make images easier to work with */
-img,
-picture,
-svg,
-video {
+i {
   max-width: 100%;
   display: block;
 }
@@ -71,12 +68,45 @@ a {
     grid-template-columns: 1fr 4fr;
 }
 
-.header {
+.header {   
+    border: 5px solid yellow;
     background-color: #ffffff;
     box-shadow: 3px 3px 3px gray;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template: 0.5fr 0.5fr / 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header .search,
+.header .profile {
+    align-self: start;
+}
+
+.header .search,
+.header .welcome {
+    justify-self: start;
+}
+
+.header div:nth-child(1) {
+    width: 100%;
+    gap: 18px;
+}
+
+.header .search-bar input {
+    border: none;
+    background-color: #e2e8f0;
+    outline-color: #bfdbfe;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: min(100%, 50vw);
 }
 
 .nav {
