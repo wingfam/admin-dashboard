@@ -51,18 +51,15 @@ body {
     background-color: #e2e8f0;
     line-height: 1.5;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr / 0.5fr 1fr 1fr;
 }
 
 a {
     text-decoration: none;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-}
-
-.header {   
+header {   
     background-color: #ffffff;
     box-shadow: 3px 3px 3px gray;
     grid-column: 2 / 3;
@@ -75,27 +72,27 @@ a {
     font-weight: bold;
 }
 
-.header div {
+header div {
     display: flex;
     align-items: center;
 }
 
-.header .search,
-.header .profile {
+header .search,
+header .profile {
     align-self: start;
 }
 
-.header .search,
-.header .welcome {
+header .search,
+header .welcome {
     justify-self: start;
 }
 
-.header .search {
+header .search {
     width: 90%;
     gap: 18px;
 }
 
-.header .search input {
+header .search input {
     border: none;
     background-color: #e2e8f0;
     outline-color: #bfdbfe;
@@ -105,42 +102,48 @@ a {
     font-size: 18px;
 }
 
-.header .avatar {
+header .avatar {
     gap: 18px;
 }
 
-.header .avatar i {
+header .avatar img:first-child {
     cursor: pointer;
     transition: transform .2s;
 }
 
-.header .avatar i:hover {
+header .avatar img:first-child:hover {
     transform: scale(1.5);
 }
 
-.header .welcome {
-    display: grid;
-    grid-template: auto auto / 100px 2fr;
+header .avatar img:last-child {
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.header .welcome img {
+header .welcome {
+    display: grid;
+    grid-template: auto auto / 100px 2fr;
+    column-gap: 10px;
+}
+
+header .welcome img {
     grid-row: 1 / 3;
 }
 
-.header .welcome p {
+header .welcome p {
     align-self: end;
 }
 
-.header .welcome h2 {
+header .welcome h2 {
     font-size: 30px;
     align-self: start;
 }
 
-.header .buttons {
+header .buttons {
     gap: 32px;
 }
 
-.header button {
+header button {
     width: 124px;
     padding: 10px;
     border: none;
@@ -151,22 +154,50 @@ a {
     cursor: pointer;
 }
 
-.header button:hover {
+header button:hover {
     background-color: #2563eb;
 }
 
-.nav {
+nav {
     background-color: #1992d4;
     grid-row: 1 / 4;
+    padding: 0 10px;
     display: grid;
-    gap: 50px;
+    justify-content: start;
+    align-items: start;
+    grid-template-rows: 0.4fr 1fr 2fr;
+    font-weight: bold;
 }
 
-.nav a, 
-.nav i {
+nav a {
     color: #ffffff;
 }
 
-.content-wrapper {
-    display: grid;
+nav img {
+    filter: invert(100%) sepia(0%) 
+        saturate(7487%) hue-rotate(203deg) 
+        brightness(111%) contrast(106%);
+}
+
+nav .logo, nav ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav .logo {
+    gap: 20px;
+    font-size: 30px;
+}
+
+nav .page-links li, nav .support-links li {
+    font-size: 18px;
+    gap: 30px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
+
+nav .page-links a:hover, nav .support-links a:hover {
+    text-decoration: underline;
 }
