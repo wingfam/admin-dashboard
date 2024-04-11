@@ -170,6 +170,7 @@ nav {
 
 nav a {
     color: #ffffff;
+    font-weight: bold;
 }
 
 nav img {
@@ -188,7 +189,6 @@ nav .logo, nav ul li {
 nav .logo {
     gap: 20px;
     font-size: 32px;
-    font-weight: bold;
 }
 
 nav .page-links li, nav .support-links li {
@@ -208,7 +208,7 @@ main {
     column-gap: 32px;
     grid-template: 0.2fr 0.2fr / 2fr 1fr;
     align-items: start;
-    margin: 30px 20px;
+    margin: 30px 3cap;
 }
 
 main legend {
@@ -265,6 +265,24 @@ main .project .card .title {
 
 main .announcement-list {
     grid-column: 2 / 3;
+}
+
+main .announcement-list .card {
+    padding: 40px 30px;
+}
+
+main .announcement-list .card .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main .announcement-list .card .content {
+    font-size: 14px;
+}
+
+main .announcement-list .card hr {
+    color: #d2d2d2;
+    margin: 20px 0;
 }
 
 main .trend-list {
